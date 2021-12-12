@@ -1,0 +1,54 @@
+<div class="bgComponent">
+  <div class="menu">
+    <ul class="clasic">
+      <h2>MENÚ CLÁSICAS</h2>
+      1. Veleña (Bocadillo, Mozarella)
+      <br />2. Chiken (pollo, Champiñones)
+      <br />
+      3. Hawaiana (Piña, Jamón)
+      <br />4. Napolitana (Tomate, Albahaca)
+      <br />
+      5. Jamón Cheese (Jamón, Mozarella)
+    </ul>
+
+    <ul class="clasic">
+      <h2>MENÚ GOURMET</h2>
+      1. Carnitas (Res,Peperoni,Bacón,Chorizo)
+      <br />2. Criollita (Maicitos,Madurito,Chorizo)
+      <br />3. Mix Fruit (Duraznos,Fresas,Piña)
+      <br />4. Mexicana (Res,Jalapeños,Tortillas de maíz)
+      <br />5. Vegetariana (Champiñón,Pimentón,Tomates,Maíz)
+    </ul>
+  </div>
+
+  <div class="form">
+    <mat-card class="card">
+      <mat-card-title>Mi Pizza!</mat-card-title>
+      <mat-card-content>
+        <div class="container">
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.name"
+              matInput
+              placeholder="CANTIDAD/ LA PIZZA"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.description"
+              matInput
+              placeholder="  CON / SIN / TODO"
+              required
+            />
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="saveTaskImg()" class="button" mat-raised-button>
+          ORDENAR
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
